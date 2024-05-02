@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form(입력양식태그) : 웹페이지에서 사용자로부터 데이터를 입력 받을 때 사용하는 태그
+                            (1) action : 데이터를 보낼 장소를 기입
+                            (2) method : 통신 방식(get/post) 
+                            (3) name : 구분자  -->
+
+
+    <form action="#" method="get" name="#">
+
+        <!-- input 태그 : 사용자가 데이터를 입력 할 수 있는 공간 -->
+        <!-- (0) name : 개발자가 임의로 값을 부여, 백엔드에서 이 값을 기준으로 데이터를 전송받는다 -->
+        <!-- (1) type = "password" : password 입력하는 창-->
+        <!-- (2) placeholder = "미리보기 텍스트" -->
+        <!-- (3) value : 기본값 -->
+        <!-- (4) type = "checkbox" -->
+        <!-- (5) type = "radio" -->
+
+        ID: <input type="text" name="id" placeholder="아이디 입력"><br>
+        PW: <input type="password" name="pw" placeholder="비밀번호 입력" maxlength="10"><br>
+
+        주소: <input type="text" value="순천" readonly><br>
+
+
+        <!-- type = "checkbox" 속성
+                1. value : 데이터를 전송할 떄 실질적으로 표현될 값 
+                2. name : checkbox 속성은 같은 카테고리끼리 name값을 일치 시켜야함-->
+       Java<input type="checkbox" value="Java" name="PG">
+       Python<input type="checkbox" value="Python" name="PG">
+       HTML<input type="checkbox" value="HTML" name="PG">
+       DB<input type="checkbox" value="DB" name="PG">
+        <!--  -->
+
+        <br>
+        <br>
+        <br>
+        팀장 지원<input type="radio" name="second" value="팀장 지원">
+        팀장 미지원<input type="radio" name="second" value="팀장 미지원">
+        모르갰어요<input type="radio" name="second" value="모르겠어요">
+
+        <!-- select 태그 : 선택하는 태그 -->
+        <!-- option 태그 : select 태그 안에서 실질적인 값을 표현하는 태그 : -->
+        <!-- pc버전 web에서 많이 사용하지 않지만, 모바일용 web을 개발할 떄 많이 사용한다 -->
+        <br><br>
+
+        <select name="">
+
+            <option value="">A형</option>
+            <option value="">B형</option>
+            <option value="">O형</option>
+            <option value="">AB형</option>
+
+        </select>
+
+        <h4>그 외의 종류들</h4>
+        <input type="file">
+        <br>
+        <input type="number">
+        <br>
+        <input type="color">
+        <br>
+        <input type="range">
+        <br>
+        <input type="date">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <h4>중요! 제출 및 초기화</h4>
+        <!-- 제출 : form 태그 내부에 있는 모든 정보들이 백앤드에 전송된다! -->
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+</body>
+</html>
